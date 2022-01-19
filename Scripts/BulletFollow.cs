@@ -13,9 +13,9 @@ public class BulletFollow : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
         }
