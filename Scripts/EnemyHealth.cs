@@ -17,12 +17,12 @@ public class EnemyHealth : MonoBehaviour
     {
         healthbar.SetHealth(enemyHealth);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet")
         {
             enemyHealth -= 10f;
-            if(enemyHealth <= 0)
+            if (enemyHealth <= 0)
             {
                 Destroy(gameObject);
             }
