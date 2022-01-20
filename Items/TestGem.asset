@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a707856c76dd8494083b90b9f87ac39a, type: 3}
   m_Name: TestGem
   m_EditorClassIdentifier: 
-  name: New Item
-  icon: {fileID: 0}
+  name: Test Gem
+  icon: {fileID: 21300000, guid: 8cdee20b176e2704fad860dc4fcef3f6, type: 3}
