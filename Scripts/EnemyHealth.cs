@@ -11,8 +11,10 @@ public class EnemyHealth : MonoBehaviour
     private void Start()
     {
         healthbar.SetMaxHealth(enemyHealth);
-    }
 
+        enemyCount.instance.enemiesCount++;
+    }
+    
     private void Update()
     {
         healthbar.SetHealth(enemyHealth);
@@ -24,8 +26,9 @@ public class EnemyHealth : MonoBehaviour
             enemyHealth -= RevolverDamage.instance.damage;
             if (enemyHealth <= 0)
             {
+                
                 Destroy(gameObject);
-                Destroy(gameObject);
+                enemyCount.instance.enemiesCount--;
             }
             Destroy(collision.gameObject);
         }
@@ -35,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
             if (enemyHealth <= 0)
             {
                 Destroy(gameObject);
+                enemyCount.instance.enemiesCount--;
             }
             Destroy(collision.gameObject);
         }
@@ -44,6 +48,7 @@ public class EnemyHealth : MonoBehaviour
             if (enemyHealth <= 0)
             {
                 Destroy(gameObject);
+                enemyCount.instance.enemiesCount--;
             }
             Destroy(collision.gameObject);
         }
