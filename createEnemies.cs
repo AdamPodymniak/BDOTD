@@ -8,6 +8,7 @@ public class createEnemies : MonoBehaviour
     public GameObject SpawnEnemies;
     public GameObject Wrota;
     public GameObject Skrzynia;
+    public GameObject NpcD;
     void Start()
     {
 
@@ -16,7 +17,7 @@ public class createEnemies : MonoBehaviour
 
         Wrota.SetActive(false);
         Skrzynia.SetActive(false);
-
+        NpcD.SetActive(false);
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -41,6 +42,7 @@ public class createEnemies : MonoBehaviour
 
             Wrota.SetActive(false);
             Skrzynia.SetActive(true);
+            NpcD.SetActive(true);
         }
 
 
