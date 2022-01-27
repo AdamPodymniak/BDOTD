@@ -10,6 +10,10 @@ public class Item : ScriptableObject
 
     public virtual void Use()
     {
-        //Activate Gem to dla ciebie raczej
+        
+    }
+    public void RemoveFromInventory()
+    {
+        Inventory.instance.Remove(this);
     }
 }

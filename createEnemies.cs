@@ -26,7 +26,8 @@ public class createEnemies : MonoBehaviour
         {
             SpawnEnemies.SetActive(true);
             Wrota.SetActive(true);
-            
+            NpcD.SetActive(false);
+
             Debug.Log("essa");
 
         }
