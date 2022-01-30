@@ -12,13 +12,13 @@ public class PlayerStats : MonoBehaviour
 
     void OnModChanged(Modyfikators newMod, Modyfikators oldMod)
     {
-        if(newMod != null)
+        if(newMod != null && newMod.dmgModyfier != 0)
         {
             RevolverDamage.instance.damage += newMod.dmgModyfier;
             ShotgunDamage.instance.damage += newMod.dmgModyfier / 5;
             SMGDamage.instance.damage += newMod.dmgModyfier / 10;
         }
-        if (oldMod != null)
+        if (oldMod != null && oldMod.dmgModyfier != 0)
         {
             RevolverDamage.instance.damage -= oldMod.dmgModyfier;
             ShotgunDamage.instance.damage -= oldMod.dmgModyfier / 5;

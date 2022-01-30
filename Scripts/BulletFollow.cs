@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletFollow : MonoBehaviour
 {
+    public int damage;
     public float speed;
     public Rigidbody2D rb;
 
