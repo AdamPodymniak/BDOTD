@@ -404,7 +404,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7732712640879503664, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2320,7 +2320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
@@ -5435,7 +5435,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7732712640879503664, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5916,7 +5916,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7732712640879503664, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5964,7 +5964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732712641360054681, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7732712641360054683, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_RootOrder
@@ -10469,7 +10469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
@@ -11204,7 +11204,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7732712640879503664, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -16670,7 +16670,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7732712640879503664, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -16718,7 +16718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732712641360054681, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7732712641360054683, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_RootOrder
@@ -17555,7 +17555,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 15
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7732712640879503664, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -17603,7 +17603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7732712641360054681, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: startTimeBtwShots
-      value: 0.5
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7732712641360054683, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: m_RootOrder
@@ -17772,7 +17772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 25
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
@@ -18910,7 +18910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
