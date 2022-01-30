@@ -48,7 +48,7 @@ public class ShotgunEnemyAI : MonoBehaviour
         if (timeBtwShots <= 0)
         {
             float angleStep = SpreadAngle / NumberOfProjectiles;
-            float aimingAngle = target.rotation.eulerAngles.z - 90f;
+            float aimingAngle = gameObject.transform.rotation.eulerAngles.z;
             float centeringOffset = (SpreadAngle / 2) - (angleStep / 2);                                                                                                                        //centered on the mouse cursor
 
             for (int i = 0; i < NumberOfProjectiles; i++)
