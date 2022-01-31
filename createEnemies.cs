@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class createEnemies : MonoBehaviour
 {
-
+    public AudioSource audioSource;
+    public AudioSource ambientMusic;
     public GameObject SpawnEnemies;
     public GameObject Wrota;
     public GameObject Wrota2;
@@ -26,6 +27,9 @@ public class createEnemies : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            ambientMusic.Play();
+            ambientMusic.loop = true;
+            audioSource.Play();
             SpawnEnemies.SetActive(true);
             Wrota.SetActive(true);
             NpcD.SetActive(false);
@@ -42,7 +46,8 @@ public class createEnemies : MonoBehaviour
         Skrzynia.SetActive(false);
         if (enemyCount.instance.enemiesCount <= 0)
         {
-
+            audioSource.Play();
+            ambientMusic.Stop();
             Wrota.SetActive(false);
             Wrota2.SetActive(false);
             Skrzynia.SetActive(true);

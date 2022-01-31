@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
+    public AudioSource audioSource;
     public Transform firePoint;
     public GameObject bulletPrefab;
 
@@ -18,6 +19,7 @@ public class PlayerBullet : MonoBehaviour
         {
             if (Time.time > ReadyForNextShot)
             {
+                audioSource.Play();
                 ReadyForNextShot = Time.time + 1 / fireRate;
                 GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
                 Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

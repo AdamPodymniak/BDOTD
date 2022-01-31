@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerShotgun : MonoBehaviour
 {
+    public AudioSource audioSource;
     public Transform firePoint;
     public GameObject bulletPrefab;
 
@@ -22,6 +23,7 @@ public class PlayerShotgun : MonoBehaviour
         {
             if (Time.time > ReadyForNextShot)
             {
+                audioSource.Play();
                 ReadyForNextShot = Time.time + 1 / fireRate;
                 float angleStep = SpreadAngle / NumberOfProjectiles;
                 float aimingAngle = firePoint.rotation.eulerAngles.z + 90f;

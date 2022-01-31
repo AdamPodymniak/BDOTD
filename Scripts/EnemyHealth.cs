@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-
+    public RipplePostProcessor camRipple;
+    public CameraShake cameraShake;
+    public GameObject bloodSplatter;
+    public GameObject bloodSplash;
     public float enemyHealth;
     public ChangeEnemyHealthUI healthbar;
 
@@ -26,7 +29,10 @@ public class EnemyHealth : MonoBehaviour
             enemyHealth -= RevolverDamage.instance.damage;
             if (enemyHealth <= 0)
             {
-                
+                camRipple.RippleEffect();
+                StartCoroutine(cameraShake.Shake(4f, .2f));
+                Instantiate(bloodSplash, transform.position, Quaternion.identity);
+                Instantiate(bloodSplatter, transform.position, Quaternion.identity);
                 Destroy(gameObject);
                 enemyCount.instance.enemiesCount--;
             }
@@ -37,6 +43,10 @@ public class EnemyHealth : MonoBehaviour
             enemyHealth -= ShotgunDamage.instance.damage;
             if (enemyHealth <= 0)
             {
+                camRipple.RippleEffect();
+                StartCoroutine(cameraShake.Shake(4f, .2f));
+                Instantiate(bloodSplash, transform.position, Quaternion.identity);
+                Instantiate(bloodSplatter, transform.position, Quaternion.identity);
                 Destroy(gameObject);
                 enemyCount.instance.enemiesCount--;
             }
@@ -47,6 +57,10 @@ public class EnemyHealth : MonoBehaviour
             enemyHealth -= SMGDamage.instance.damage;
             if (enemyHealth <= 0)
             {
+                camRipple.RippleEffect();
+                StartCoroutine(cameraShake.Shake(4f, .2f));
+                Instantiate(bloodSplash, transform.position, Quaternion.identity);
+                Instantiate(bloodSplatter, transform.position, Quaternion.identity);
                 Destroy(gameObject);
                 enemyCount.instance.enemiesCount--;
             }
