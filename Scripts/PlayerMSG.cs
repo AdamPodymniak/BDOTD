@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMSG : MonoBehaviour
 {
+    public AudioSource audioSource;
     public Transform firePoint;
     public GameObject bulletPrefab;
 
@@ -23,6 +24,14 @@ public class PlayerMSG : MonoBehaviour
                 Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
                 rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            audioSource.Play();
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            audioSource.Stop();
         }
     }
 }

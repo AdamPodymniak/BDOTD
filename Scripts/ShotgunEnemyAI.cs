@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class ShotgunEnemyAI : MonoBehaviour
 {
+    public AudioSource audioSource;
     public float stoppingDistance;
     public float retreatDistance;
     public Transform player;
@@ -47,8 +48,9 @@ public class ShotgunEnemyAI : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
+            audioSource.Play();
             float angleStep = SpreadAngle / NumberOfProjectiles;
-            float aimingAngle = target.rotation.eulerAngles.z - 90f;
+            float aimingAngle = gameObject.transform.rotation.eulerAngles.z;
             float centeringOffset = (SpreadAngle / 2) - (angleStep / 2);                                                                                                                        //centered on the mouse cursor
 
             for (int i = 0; i < NumberOfProjectiles; i++)

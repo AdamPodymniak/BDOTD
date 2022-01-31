@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public AudioSource audioSource;
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     public Camera cam;
@@ -16,6 +17,14 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
+        if (movement.x != 0 || movement.y != 0)
+        {
+            audioSource.volume = 1f;
+        }
+        else
+        {
+            audioSource.volume = 0f;
+        }
         // mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
 

@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
+    public AudioSource audioSource;
     public float stoppingDistance;
     public float retreatDistance;
     public Transform player;
@@ -42,6 +43,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (timeBtwShots <= 0)
         {
+            audioSource.Play();
             BulletFollow bullet = Instantiate(enemyBullet, transform.position, Quaternion.identity).GetComponent<BulletFollow>();
             bullet.rb.velocity = bullet.speed * transform.right;
             timeBtwShots = startTimeBtwShots;
