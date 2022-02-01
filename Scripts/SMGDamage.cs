@@ -18,4 +18,6 @@ public class SMGDamage : MonoBehaviour
     #endregion
 
     public float damage = 3f;
+    public int fireDamage = 0;
+    public int shockDamage = 0;
 }

@@ -17,7 +17,7 @@ public class EquipManager : MonoBehaviour
     public delegate void OnModChanged(Modyfikators newMod, Modyfikators oldMod);
     public OnModChanged onModChanged;
     public int numOfSlots = 3;
-    private int slotIndex = 0;
+    public int slotIndex = 0;
 
     private void Start()
     {
@@ -28,7 +28,7 @@ public class EquipManager : MonoBehaviour
     public void Equip(Modyfikators newMod)
     {
         Modyfikators oldMod = null;
-        if(slotIndex < 3)
+        if(numOfSlots > slotIndex-1)
         {
             if(currentModyfikators[slotIndex] != null)
             {
@@ -45,6 +45,7 @@ public class EquipManager : MonoBehaviour
     }
     public void unequipAll()
     {
+        slotIndex = 0;
         for (int i = 0; i < numOfSlots; i++)
         {
             if(currentModyfikators[i] != null)
@@ -66,7 +67,6 @@ public class EquipManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.U))
         {
             unequipAll();
-            slotIndex = 0;
         }
     }
 }

@@ -18,4 +18,6 @@ public class RevolverDamage : MonoBehaviour
     #endregion
 
     public float damage = 70f;
+    public int fireDamage = 0;
+    public int shockDamage = 0;
 }

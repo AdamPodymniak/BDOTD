@@ -7,20 +7,20 @@ public class InventorySlot : MonoBehaviour
 {
     public Image icon;
     public Button removeButton;
+    public HoverTip hoverTip;
+    Modyfikators mod;
 
-    Item item;
-
-    public void AddItem(Item newItem)
+    public void AddItem(Modyfikators newItem)
     {
-        item = newItem;
-
-        icon.sprite = item.icon;
+        mod = newItem;
+        hoverTip.tipToShow = mod.description;
+        icon.sprite = mod.icon;
         icon.enabled = true;
         removeButton.interactable = true;
     }
     public void ClearSlot()
     {
-        item = null;
+        mod = null;
 
         icon.sprite = null;
         icon.enabled = false;
@@ -28,13 +28,13 @@ public class InventorySlot : MonoBehaviour
     }
     public void OnRemoveButton()
     {
-        Inventory.instance.Remove(item);
+        Inventory.instance.Remove(mod);
     }
     public void ActivateGem()
     {
-        if(item != null)
+        if(mod != null)
         {
-            item.Use();
+            mod.Use();
         }
     }
 }
