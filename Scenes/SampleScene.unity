@@ -13985,7 +13985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26c731f398b45264d894e412e8ae7839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 12
   damage: 30
   fireDamage: 0
   shockDamage: 0
@@ -19762,7 +19761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1769383246}
-  moveSpeed: 6
+  moveSpeed: 10
   rb: {fileID: 1769383238}
   cam: {fileID: 519420031}
   animator: {fileID: 1769383242}
