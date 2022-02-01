@@ -20,9 +20,9 @@ public class Inventory : MonoBehaviour
     public delegate void OnItemChange();
     public OnItemChange onItemChangeCallback;
     public int inventorySpace = 20;
-    public List<Item> items = new List<Item>();
+    public List<Modyfikators> items = new List<Modyfikators>();
 
-    public bool Add(Item item)
+    public bool Add(Modyfikators item)
     {
         if(items.Count >= inventorySpace)
         {
@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
-    public void Remove(Item item)
+    public void Remove(Modyfikators item)
     {
         items.Remove(item);
 

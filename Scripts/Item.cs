@@ -5,15 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
 public class Item : ScriptableObject
 {
-    new public string name = "New Item";
     public Sprite icon = null;
+    new public string name = "New Item";
 
     public virtual void Use()
     {
         
-    }
-    public void RemoveFromInventory()
-    {
-        Inventory.instance.Remove(this);
     }
 }

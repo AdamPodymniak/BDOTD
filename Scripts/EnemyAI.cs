@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
+    public bool isShocked = false;
     public AudioSource audioSource;
     public float stoppingDistance;
     public float retreatDistance;
@@ -41,16 +42,19 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (timeBtwShots <= 0)
+        if (!isShocked)
         {
-            audioSource.Play();
-            BulletFollow bullet = Instantiate(enemyBullet, transform.position, Quaternion.identity).GetComponent<BulletFollow>();
-            bullet.rb.velocity = bullet.speed * transform.right;
-            timeBtwShots = startTimeBtwShots;
-        }
-        else
-        {
-            timeBtwShots -= Time.deltaTime;
+            if (timeBtwShots <= 0)
+            {
+                audioSource.Play();
+                BulletFollow bullet = Instantiate(enemyBullet, transform.position, Quaternion.identity).GetComponent<BulletFollow>();
+                bullet.rb.velocity = bullet.speed * transform.right;
+                timeBtwShots = startTimeBtwShots;
+            }
+            else
+            {
+                timeBtwShots -= Time.deltaTime;
+            }
         }
     }
     void UpdatePath()
@@ -93,7 +97,7 @@ public class EnemyAI : MonoBehaviour
         {
             rb.AddForce(force);
         }
-        else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
+        else if ((Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance) || isShocked)
         {
             transform.position = this.transform.position;
         }

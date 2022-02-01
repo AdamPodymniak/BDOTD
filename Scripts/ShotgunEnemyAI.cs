@@ -5,6 +5,7 @@ using Pathfinding;
 
 public class ShotgunEnemyAI : MonoBehaviour
 {
+    public bool isShocked;
     public AudioSource audioSource;
     public float stoppingDistance;
     public float retreatDistance;
@@ -46,28 +47,31 @@ public class ShotgunEnemyAI : MonoBehaviour
 
     void Update()
     {
-        if (timeBtwShots <= 0)
+        if (!isShocked)
         {
-            audioSource.Play();
-            float angleStep = SpreadAngle / NumberOfProjectiles;
-            float aimingAngle = gameObject.transform.rotation.eulerAngles.z;
-            float centeringOffset = (SpreadAngle / 2) - (angleStep / 2);                                                                                                                        //centered on the mouse cursor
-
-            for (int i = 0; i < NumberOfProjectiles; i++)
+            if (timeBtwShots <= 0)
             {
-                float currentBulletAngle = angleStep * i;
+                audioSource.Play();
+                float angleStep = SpreadAngle / NumberOfProjectiles;
+                float aimingAngle = gameObject.transform.rotation.eulerAngles.z;
+                float centeringOffset = (SpreadAngle / 2) - (angleStep / 2);                                                                                                                        //centered on the mouse cursor
 
-                Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, aimingAngle + currentBulletAngle - centeringOffset));
-                GameObject bullet = Instantiate(enemyBullet, ProjectileSpawnPosition.position, rotation);
+                for (int i = 0; i < NumberOfProjectiles; i++)
+                {
+                    float currentBulletAngle = angleStep * i;
 
-                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                rb.AddForce(bullet.transform.right * 10, ForceMode2D.Impulse);
+                    Quaternion rotation = Quaternion.Euler(new Vector3(0, 0, aimingAngle + currentBulletAngle - centeringOffset));
+                    GameObject bullet = Instantiate(enemyBullet, ProjectileSpawnPosition.position, rotation);
+
+                    Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                    rb.AddForce(bullet.transform.right * 10, ForceMode2D.Impulse);
+                }
+                timeBtwShots = startTimeBtwShots;
             }
-            timeBtwShots = startTimeBtwShots;
-        }
-        else
-        {
-            timeBtwShots -= Time.deltaTime;
+            else
+            {
+                timeBtwShots -= Time.deltaTime;
+            }
         }
     }
     void UpdatePath()
@@ -110,7 +114,7 @@ public class ShotgunEnemyAI : MonoBehaviour
         {
             rb.AddForce(force);
         }
-        else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
+        else if ((Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance) || isShocked)
         {
             transform.position = this.transform.position;
         }

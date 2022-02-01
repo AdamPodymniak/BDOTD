@@ -9,8 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a707856c76dd8494083b90b9f87ac39a, type: 3}
-  m_Name: TestGem
+  m_Script: {fileID: 11500000, guid: 40d8b197c9f560b4388a1d3492d4bb11, type: 3}
+  m_Name: DmgMod
   m_EditorClassIdentifier: 
-  name: Test Gem
   icon: {fileID: 21300000, guid: 8cdee20b176e2704fad860dc4fcef3f6, type: 3}
+  name: YesExactly
+  modIcon: {fileID: 0}
+  description: 'Damage: +10'
+  dmgModyfier: 10
+  healthModifier: 0
+  fireModyfier: 0
+  shockModyfier: 0
