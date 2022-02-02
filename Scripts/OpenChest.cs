@@ -42,7 +42,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(6, 10);
                         randomFire = 1 * Random.Range(6, 10);
                         randomShock = 1 * Random.Range(6, 10);
-                        randomHealth = 10 * Random.Range(4, 6);
+                        randomHeal = 10 * Random.Range(4, 6);
                         randomPotionNum = 1 * Random.Range(4, 6);
                     }
                     else if (rarityLevel == 1 || rarityLevel == 2)
@@ -53,7 +53,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(3, 6);
                         randomFire = 1 * Random.Range(3, 6);
                         randomShock = 1 * Random.Range(3, 6);
-                        randomHealth = 10 * Random.Range(2, 4);
+                        randomHeal = 10 * Random.Range(2, 4);
                         randomPotionNum = 1 * Random.Range(2, 4);
                     }
                     else
@@ -64,7 +64,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(1, 3);
                         randomFire = 1 * Random.Range(1, 3);
                         randomShock = 1 * Random.Range(1, 3);
-                        randomHealth = 10 * Random.Range(1, 2);
+                        randomHeal = 10 * Random.Range(1, 2);
                         randomPotionNum = 1 * Random.Range(1, 2);
                     }
                 }
@@ -79,7 +79,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(10, 15);
                         randomFire = 1 * Random.Range(10, 15);
                         randomShock = 1 * Random.Range(10, 15);
-                        randomHealth = 10 * Random.Range(6, 10);
+                        randomHeal = 10 * Random.Range(6, 10);
                         randomPotionNum = 1 * Random.Range(6, 10);
                     }
                     else if (rarityLevel == 1 || rarityLevel == 2)
@@ -90,7 +90,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(6, 10);
                         randomFire = 1 * Random.Range(6, 10);
                         randomShock = 1 * Random.Range(6, 10);
-                        randomHealth = 10 * Random.Range(4, 6);
+                        randomHeal = 10 * Random.Range(4, 6);
                         randomPotionNum = 1 * Random.Range(4, 6);
                     }
                     else if (rarityLevel == 3 || rarityLevel == 4 || rarityLevel == 5)
@@ -101,7 +101,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(3, 6);
                         randomFire = 1 * Random.Range(3, 6);
                         randomShock = 1 * Random.Range(3, 6);
-                        randomHealth = 10 * Random.Range(2, 4);
+                        randomHeal = 10 * Random.Range(2, 4);
                         randomPotionNum = 1 * Random.Range(2, 4);
                     }
                     else
@@ -112,7 +112,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(1, 3);
                         randomFire = 1 * Random.Range(1, 3);
                         randomShock = 1 * Random.Range(1, 3);
-                        randomHealth = 10 * Random.Range(1, 2);
+                        randomHeal = 10 * Random.Range(1, 2);
                         randomPotionNum = 1 * Random.Range(1, 2);
                     }
 
@@ -128,7 +128,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(15, 30);
                         randomFire = 1 * Random.Range(15, 30);
                         randomShock = 1 * Random.Range(15, 30);
-                        randomHealth = 10 * Random.Range(10, 20);
+                        randomHeal = 10 * Random.Range(10, 20);
                         randomPotionNum = 1 * Random.Range(10, 20);
                     }
                     else if (rarityLevel == 1 || rarityLevel == 2)
@@ -139,7 +139,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(10, 15);
                         randomFire = 1 * Random.Range(10, 15);
                         randomShock = 1 * Random.Range(10, 15);
-                        randomHealth = 10 * Random.Range(6, 10);
+                        randomHeal = 10 * Random.Range(6, 10);
                         randomPotionNum = 1 * Random.Range(6, 10);
                     }
                     else if (rarityLevel == 3 || rarityLevel == 4 || rarityLevel == 5)
@@ -150,7 +150,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(6, 10);
                         randomFire = 1 * Random.Range(6, 10);
                         randomShock = 1 * Random.Range(6, 10);
-                        randomHealth = 10 * Random.Range(4, 6);
+                        randomHeal = 10 * Random.Range(4, 6);
                         randomPotionNum = 1 * Random.Range(4, 6);
                     }
                     else if (rarityLevel == 6 || rarityLevel == 7 || rarityLevel == 8)
@@ -161,7 +161,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(3, 6);
                         randomFire = 1 * Random.Range(3, 6);
                         randomShock = 1 * Random.Range(3, 6);
-                        randomHealth = 10 * Random.Range(2, 4);
+                        randomHeal = 10 * Random.Range(2, 4);
                         randomPotionNum = 1 * Random.Range(2, 4);
                     }
                     else
@@ -172,7 +172,7 @@ public class OpenChest : MonoBehaviour
                         randomHealth = 10 * Random.Range(1, 3);
                         randomFire = 1 * Random.Range(1, 3);
                         randomShock = 1 * Random.Range(1, 3);
-                        randomHealth = 10 * Random.Range(1, 2);
+                        randomHeal = 10 * Random.Range(1, 2);
                         randomPotionNum = 1 * Random.Range(1, 2);
                     }
                 }
@@ -199,13 +199,13 @@ public class OpenChest : MonoBehaviour
                 }
                 else if (chooseModType == 4)
                 {
-                    createNewMod.potionNumberModyfier = randomShock;
-                    createNewMod.description = "Bonus Potions: +" + randomShock.ToString();
+                    createNewMod.potionNumberModyfier = randomPotionNum;
+                    createNewMod.description = "Bonus Potions: +" + randomPotionNum.ToString();
                 }
                 else if (chooseModType == 5)
                 {
-                    createNewMod.potionHealModyfier = randomShock;
-                    createNewMod.description = "Bonus Heal: +" + randomShock.ToString();
+                    createNewMod.potionHealModyfier = randomHeal;
+                    createNewMod.description = "Bonus Heal: +" + randomHeal.ToString();
                 }
                     modPickUp.GetComponent<ItemPickUp>().item = createNewMod;
                     modPickUp.SetActive(true);
