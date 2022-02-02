@@ -11,6 +11,8 @@ public class Modyfikators : Item
     public int healthModifier = 0;
     public int fireModyfier = 0;
     public int shockModyfier = 0;
+    public int potionNumberModyfier;
+    public int potionHealModyfier;
 
     public void RemoveFromInventory()
     {
@@ -18,8 +20,11 @@ public class Modyfikators : Item
     }
     public override void Use()
     {
-        base.Use();
-        EquipManager.instance.Equip(this);
-        RemoveFromInventory();
+        if (EquipManager.instance.numOfSlots > EquipManager.instance.slotIndex)
+        {
+            base.Use();
+            EquipManager.instance.Equip(this);
+            RemoveFromInventory();
+        }
     }
 }

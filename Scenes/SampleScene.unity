@@ -627,7 +627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18272230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7, y: -6.7, z: 0}
+  m_LocalPosition: {x: -3.7, y: -1.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -640,6 +640,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1002904744}
     m_Modifications:
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: camRipple
       value: 
@@ -654,7 +662,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: bloodSplatter
@@ -4033,6 +4041,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -4046,7 +4062,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: bloodSplatter
@@ -7682,6 +7698,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1002904744}
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -7695,7 +7719,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: bloodSplatter
@@ -8147,6 +8171,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1002904744}
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -8160,7 +8192,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: bloodSplatter
@@ -13925,6 +13957,8 @@ GameObject:
   - component: {fileID: 1205292469}
   - component: {fileID: 1205292468}
   - component: {fileID: 1205292471}
+  - component: {fileID: 1205292472}
+  - component: {fileID: 1205292473}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: GM
@@ -14015,7 +14049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58db238c342cc504fa9a30617176a4aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 2
   fireDamage: 0
   shockDamage: 0
 --- !u!114 &1205292471
@@ -14030,8 +14064,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2430dcc17813faa48a3fb82f1768edab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentModyfikators: []
   numOfSlots: 3
   slotIndex: 0
+--- !u!114 &1205292472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205292464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8ee8a4a84c000049a49e0483136e19a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+--- !u!114 &1205292473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205292464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b7f54e839e13a498ac5f3727d7ff6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: {fileID: 1205292472}
+  shotgunDamage: {fileID: 1205292469}
+  revolverDamage: {fileID: 1205292468}
+  smgDamage: {fileID: 1205292470}
 --- !u!1 &1209215678
 GameObject:
   m_ObjectHideFlags: 0
@@ -14615,6 +14679,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -14628,7 +14700,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: bloodSplatter
@@ -15136,6 +15208,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1002904744}
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -15149,7 +15229,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: bloodSplatter
@@ -19690,7 +19770,6 @@ GameObject:
   - component: {fileID: 1769383238}
   - component: {fileID: 1769383242}
   - component: {fileID: 1769383239}
-  - component: {fileID: 1769383245}
   - component: {fileID: 1769383244}
   - component: {fileID: 1769383243}
   - component: {fileID: 1769383246}
@@ -19862,7 +19941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ef505740627f704fa5c2be04536d784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
+  healtStat: {fileID: 1205292473}
   currentHealth: 0
   healthBar: {fileID: 998263048}
   damage: 10
@@ -19878,19 +19957,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1bb43adf765aa49915449a88e3ffc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1769383245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769383236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80b7f54e839e13a498ac5f3727d7ff6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: {fileID: 1769383243}
 --- !u!82 &1769383246
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21558,6 +21624,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1002904744}
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -21571,7 +21645,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: bloodSplatter
@@ -22648,6 +22722,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1002904744}
     m_Modifications:
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -22661,7 +22743,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: enemyHealth
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 6107824486978094386, guid: 8984b2d6ece922e4baf22fb9363299ce, type: 3}
       propertyPath: bloodSplatter
@@ -22909,6 +22991,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -22922,7 +23012,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 40
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: bloodSplatter
@@ -23843,6 +23933,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: fireRes
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
+      propertyPath: shockRes
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: camRipple
       value: 
       objectReference: {fileID: 519420035}
@@ -23856,7 +23954,7 @@ PrefabInstance:
       objectReference: {fileID: 519420034}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: enemyHealth
-      value: 30
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7145978442005550760, guid: 609144ee0b646354ba9c43a1ece4b2d6, type: 3}
       propertyPath: bloodSplatter

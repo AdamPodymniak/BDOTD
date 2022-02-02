@@ -13,34 +13,30 @@ public class EquipManager : MonoBehaviour
     }
     #endregion
 
-    Modyfikators[] currentModyfikators;
+    public Modyfikators[] currentModyfikators;
     public delegate void OnModChanged(Modyfikators newMod, Modyfikators oldMod);
     public OnModChanged onModChanged;
-    public int numOfSlots = 3;
-    public int slotIndex = 0;
+    public int numOfSlots;
+    public int maxNumOfSlots;
+    public int slotIndex;
 
     private void Start()
     {
-        currentModyfikators = new Modyfikators[numOfSlots];
-
+        currentModyfikators = new Modyfikators[maxNumOfSlots];
     }
 
     public void Equip(Modyfikators newMod)
     {
         Modyfikators oldMod = null;
-        if(numOfSlots > slotIndex-1)
+        if(numOfSlots > slotIndex)
         {
-            if(currentModyfikators[slotIndex] != null)
-            {
-                oldMod = currentModyfikators[slotIndex];
-                Inventory.instance.Add(oldMod);
-            }
             currentModyfikators[slotIndex] = newMod;
             slotIndex++;
-        }
-        if(onModChanged != null)
-        {
-            onModChanged.Invoke(newMod, oldMod);
+
+            if (onModChanged != null)
+            {
+                onModChanged.Invoke(newMod, oldMod);
+            }
         }
     }
     public void unequipAll()
