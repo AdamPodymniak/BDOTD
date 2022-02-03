@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class InventoryUI : MonoBehaviour
 {
+    public static InventoryUI instance;
     public Transform inventoryPanel;
     public GameObject inventoryUI;
     Inventory inventory;
 
     InventorySlot[] slots;
-
     private void Start()
     {
         inventory = Inventory.instance;
         inventory.onItemChangeCallback += UpdateUI;
-
         slots = inventoryPanel.GetComponentsInChildren<InventorySlot>();
     }
     private void Update()

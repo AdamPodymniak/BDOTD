@@ -145,6 +145,7 @@ public class EnemyHealth : MonoBehaviour
     }
     private void DestroyEnemy()
     {
+        PlayerCoins.instance.numOfCoins += Random.Range(5, 25);
         camRipple.RippleEffect();
         StartCoroutine(cameraShake.Shake(4f, .2f));
         Instantiate(bloodSplash, transform.position, Quaternion.identity);
