@@ -33,9 +33,9 @@ public class PlayerStats : MonoBehaviour
         }
         if (oldMod != null && oldMod.dmgModyfier != 0)
         {
-            revolverDamage.damage -= newMod.dmgModyfier;
-            shotgunDamage.damage -= newMod.dmgModyfier / 5;
-            smgDamage.damage -= newMod.dmgModyfier / 10;
+            revolverDamage.damage -= oldMod.dmgModyfier;
+            shotgunDamage.damage -= oldMod.dmgModyfier / 5;
+            smgDamage.damage -= oldMod.dmgModyfier / 10;
         }
         if (newMod != null && newMod.healthModifier != 0)
         {
@@ -79,7 +79,7 @@ public class PlayerStats : MonoBehaviour
         }
         if (oldMod != null && oldMod.potionNumberModyfier != 0)
         {
-            potionNum.maxNumOfPotions += newMod.potionNumberModyfier;
+            potionNum.maxNumOfPotions += oldMod.potionNumberModyfier;
         }
         if (newMod != null && newMod.potionHealModyfier != 0)
         {
@@ -87,7 +87,7 @@ public class PlayerStats : MonoBehaviour
         }
         if (oldMod != null && oldMod.potionHealModyfier != 0)
         {
-            potionNum.amountOfHeal += newMod.potionHealModyfier;
+            potionNum.amountOfHeal += oldMod.potionHealModyfier;
         }
     }
 }

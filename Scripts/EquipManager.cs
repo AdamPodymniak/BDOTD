@@ -9,6 +9,8 @@ public class EquipManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance != null)
+            return;
         instance = this;
     }
     #endregion
