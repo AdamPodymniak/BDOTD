@@ -12,6 +12,7 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     void FixedUpdate()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         try
         {
             transform.position = Vector3.Lerp(transform.position, player.position, speed) + offset;

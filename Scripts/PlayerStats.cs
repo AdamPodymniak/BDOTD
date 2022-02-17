@@ -12,12 +12,12 @@ public class PlayerStats : MonoBehaviour
     public SMGDamage smgDamage;
     void Start()
     {
-        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         EquipManager.instance.onModChanged += OnModChanged;
     }
     private void Update()
     {
-        if(GameObject.FindGameObjectWithTag("Player") != null)
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         }
