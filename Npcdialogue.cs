@@ -50,8 +50,10 @@ public class Npcdialogue : MonoBehaviour
             {
 
                 NpcD.SetActive(!NpcD.activeSelf);
-
+                es = true;
+                es = false;
             }
+            
         }
     }
 }

@@ -34,7 +34,7 @@ public class createEnemies : MonoBehaviour
             Wrota.SetActive(true);
             NpcD.SetActive(false);
 
-            Debug.Log("essa");
+            
 
         }
 

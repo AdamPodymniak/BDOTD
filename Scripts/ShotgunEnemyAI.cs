@@ -29,7 +29,7 @@ public class ShotgunEnemyAI : MonoBehaviour
     [Range(0, 360)]
     [SerializeField] private float SpreadAngle = 40f;
     [SerializeField] private Transform ProjectileSpawnPosition;
-
+    public Vector3 dir;
     public float distance = 10f;
 
 
@@ -47,6 +47,8 @@ public class ShotgunEnemyAI : MonoBehaviour
 
     void Update()
     {
+
+        dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
         if (!isShocked)
         {
             if (timeBtwShots <= 0)
