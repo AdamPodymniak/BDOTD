@@ -18,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
     public int oryginalShockRes;
     public EnemyAI stopIfShocked1 = null;
     public ShotgunEnemyAI stopIfShocked2 = null;
+    public GameObject enemy;
 
     private void Start()
     {
@@ -150,7 +151,7 @@ public class EnemyHealth : MonoBehaviour
         StartCoroutine(cameraShake.Shake(4f, .2f));
         Instantiate(bloodSplash, transform.position, Quaternion.identity);
         Instantiate(bloodSplatter, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Destroy(enemy);
         enemyCount.instance.enemiesCount--;
     }
 }

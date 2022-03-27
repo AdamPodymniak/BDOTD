@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
@@ -15,6 +16,10 @@ public class PlayerBullet : MonoBehaviour
     public float bulletForce;
     void Update()
     {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (Time.time > ReadyForNextShot)

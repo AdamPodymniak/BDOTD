@@ -61,6 +61,14 @@ public class WeponScript : MonoBehaviour
             currentGun = guns[currentWeaponIndex];
 
         }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            guns[currentWeaponIndex].SetActive(false);
+            currentWeaponIndex = 3;
+            guns[currentWeaponIndex].SetActive(true);
+            currentGun = guns[currentWeaponIndex];
+
+        }
 
 
 

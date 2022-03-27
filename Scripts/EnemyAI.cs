@@ -24,6 +24,7 @@ public class EnemyAI : MonoBehaviour
     bool reachedEndOfPath = false;
     Seeker seeker;
     Rigidbody2D rb;
+    public Vector3 dir;
 
     public float distance = 10f;
 
@@ -42,6 +43,12 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+
+        dir = (path.vectorPath[currentWaypoint] - transform.position).normalized;
+        
+
+
+
         if (!isShocked)
         {
             if (timeBtwShots <= 0)
